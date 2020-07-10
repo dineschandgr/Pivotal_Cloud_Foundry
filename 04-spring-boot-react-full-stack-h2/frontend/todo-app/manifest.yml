@@ -1,0 +1,12 @@
+applications:
+- name: todo-app-react-frontend
+  instances: 1
+  memory: 64M
+  path: build/
+  timeout: 120
+  routes:
+  - route: todo-app-react-frontend-dinesh-100.cfapps.io 
+  buildpacks:
+  - https://github.com/cloudfoundry/staticfile-buildpack
+  stack: cflinuxfs3
+
